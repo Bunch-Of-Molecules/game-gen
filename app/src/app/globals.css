@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body{
+  transition: background-color 0.4s ease, color .8s ease;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -78,21 +82,42 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-.ribbon{
+.switch{
+  fill: oklch(0.203 0.038 257.213);
+}
+
+.dark .switch{
+  fill: aliceblue;
+}
+
+.ribbon {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 90px;
-  background-image: linear-gradient(oklch(0.203 0.038 257.213), oklch(0.24 0.04 244.781));
-  color: #ccc5b9;
-  padding: 0 30px;
+  background-image: linear-gradient(
+          oklch(1 0 89.876),
+          oklch(0.92 0.01 240)
+  ); /* Light blues */
+  color: #222;
+  padding: 0 2vw;
   z-index: 100;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
   justify-content: space-between;
   box-sizing: border-box;
 
+  transition: background-color 0.4s ease, color .8s ease;
+}
+
+.dark .ribbon {
+  background-image: linear-gradient(
+          oklch(0.203 0.038 257.213),
+          oklch(0.24 0.04 244.781)
+  );
+  color: oklch(0.95 0.01 240);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .dark {
