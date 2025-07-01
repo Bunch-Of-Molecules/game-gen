@@ -87,7 +87,7 @@ body{
 }
 
 .dark .switch{
-  fill: aliceblue;
+  fill: white;
 }
 
 .ribbon {
@@ -125,7 +125,8 @@ body{
   --foreground: oklch(0.98 0 0);                     /* Pure white */
 
   --card: oklch(0.24 0.04 244.781);                       /* Slightly lighter blue */
-  --card-foreground: oklch(0.98 0 0);                /* Pure white */
+  --card-foreground: oklch(0.98 0 0);
+  --card-border: #1a3f3f;
 
   --popover: oklch(0.2 0.01 240);
   --popover-foreground: oklch(0.98 0 0);

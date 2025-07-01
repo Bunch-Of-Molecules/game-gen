@@ -14,7 +14,7 @@ export default function Home() {
       <div>
           //ribbon
           <div className="ribbon flex items-center">
-                  <div className="text-3xl font-semibold">Game Generator</div>
+                  <div className="text-3xl font-semibold font">Game Forge</div>
                   <div className="flex items-center gap-4">
                       <button className="hover:opacity-70 transition mx-5">
                           <a href="https://github.com/Bunch-Of-Molecules/game-gen">
@@ -31,7 +31,7 @@ export default function Home() {
               {/*game window*/}
           <div className="flex flex-col lg:flex-row gap-2 mt-20 px-6 py-4">
               <div className="flex-1/3">
-                  <Card>
+                  <Card className="border-2">
                       <CardHeader>
                           <CardTitle>Game</CardTitle>
                       </CardHeader>
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
               {/*control panel*/}
               <div className="flex-1">
-                  <Card>
+                  <Card className="border-2">
                       <CardHeader>
                           <CardTitle>Control Panel</CardTitle>
                       </CardHeader>
